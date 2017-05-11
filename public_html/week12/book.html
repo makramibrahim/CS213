@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html id="html2">
+	<head>
+        <title>CS 213 | PHP Week 12</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="e-commerce company">
+        <meta name="keywords" content=", ">
+        <meta name="author" content="Makram Ibrahim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+       <link href="css/bootstrap.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="week07.css" rel="stylesheet">
+       <script type="text/javascript" src="week12.js"></script>   
+
+	</head>
+	<body id="bodyBook">
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+            </div>
+              
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+        <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/dubaiYellow.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 id="h1p2">Welcome to AliHotels in Dubai</h1>
+              </div>
+              </div>
+              </div>
+              </div>
+            </div><!-- /.carousel -->
+       <div class="container">
+        <div class="container1">
+            
+          <h3 style="text-align=cetner">50% Discount for One Week</h3>
+       
+            <!--Table one does include one night and two only-->
+            <form action="week12.php" method="POST">
+            
+            <table class="table1" style="text-align: left;">    
+       <thead>
+    <tr>
+        <th col="3">Book Your Best Vacation NOW
+         <br> Cost Per Person<br>
+         </th>
+    </tr>
+        </thead>
+
+        <tr><td><input oninput="getInputStayPrice()" id="199.99" name="oneDay" value="0" size="1" style="color:black"/> 
+        $199.99 One Day & night at AliHotel</td></tr>
+
+        <tr><td><input oninput="getInputStayPrice()" id="189.99" name="dubaiSafari" value="0" size="1" style="color:black">
+        $189.99 4x4 Dubai Desert Safari </td></tr>
+
+        <tr><td><input oninput="getInputStayPrice()" id="229.99" name="adventure" value="0" size="1" style="color:black"/> 
+       $229.99 Dubai Atlantis Adventure</td></tr>
+
+        <tr><td><input oninput="getInputStayPrice()" id="1495.99" name="skydive" value="0" size="1" style="color:black"/> 
+       $1495.99 Skydive Dubai Adventure</td></tr>
+        </table>
+        </div>
+         
+
+     <div class="container2">
+            
+         <h3>Your Vacation Open Food</h3>
+             
+             <!--Table three does include one meal per day-->
+        
+     <table class="table3" style="text-align: left;">    
+       <thead>
+    <tr>
+        <th col="3">One Day Meals<br>
+        Cost Per Person<br></th>
+    </tr>
+
+      </thead>
+
+        <tr><td><input oninput="getInputStayPrice()" id="19.99" name="breakfast" value="0" size="1" style="color:black"/>
+        $19.99 Break Fast From 6 AM to 10 AM</td></tr>
+
+        <tr><td><input oninput="getInputStayPrice()" id="49.99" name="lunch" value="0" size="1" style="color:black"/> 
+        $49.99 Lunch From 12 PM to 3 PM. </td></tr>
+
+        <tr><td><input oninput="getInputStayPrice()" id="12.99" name="dinner" value="0" size="1" style="color:black">
+        $12.99 Dinner From 5 PM to 8 PM.</td></tr>
+        </table>
+        </div>
+       </div>
+               
+    <div class="payInfo">
+        
+       <div id="cart">
+    
+    <!--CART information-->
+        <h2>CART</h2>
+    <div id="totalItems">Selected: </div>  
+    <div id="totalDue">Total Due: $0.00</div>  
+    <!--<div id="totalPrice2"></div>--> 
+    <br><br>
+    </div>
+        
+    <!--presonal information-->
+     <div class="personalInfo">
+         <h4 style="color:red"><b>*All fields are required</b></h4>
+    <input onkeyup="validateFirstName(this.value, 'firstName')"
+           placeholder="Frist Name" id="fName" name="fName"/>
+    <span class="firstName" style="color:red"><b>*</b></span><br>
+         
+    <input onkeyup="validateLastName(this.value, 'lastName')"
+           placeholder= "Last Name" id="lName" name="lName"/>
+    <span class="lastName" style="color:red">*</span><br>
+         
+    <input onkeyup="validatePhoneNumber(this.value, 'phoneNumber')"
+           placeholder= "Phone Number" name="phoneNumber"/>
+    <span class="phoneNumber" style="color:red"><b>*</b></span><br>
+         
+    <input type="email" onInput="validateEmail(this.value, 'email')" placeholder="Email" name="email"/>
+    <span class="email" style="color:red"><b>*</b></span><br>
+             
+    <input onInput="validateStreet(this.value, 'street')" 
+     placeholder= "Street Address" name="stAddress"/>
+    <span class="street" style="color:red"><b>*</b></span><br>
+         
+    <input onInput="validateCity(this.value, 'city')" 
+     placeholder= "City" name="city"/>
+    <span class="city" style="color:red">*</span><br>
+         
+    <input onInput="validateStates(this.value, 'states')" 
+     placeholder= "State Abbreviation" name="state"/>
+    <span class="states" style="color:red"><b>*</b></span><br>
+         
+    <input onkeyup="validateZip(this.value, 'zip')" placeholder="Zip Code" name="zip"/>
+    <span class="zip" style="color:red"><b>*</b></span><br>
+         
+    </div> 
+        
+        <!--Credit Card info-->                 
+    <div class="creditCard">
+        
+     <select name="cardtype" id="cardtype">
+        <option value="1">Visa</option>
+        <option value="2">Master</option>
+        <option value="3">Discove</option>
+        <option value="4">American</option>
+    </select><br>
+        
+    <input onInput="validateCreditCard(this.value, 'num')" 
+     placeholder= "0000 0000 0000 0000" name="visaCard"/>
+     <span class="num" style="color:red"><b>*</b></span><br>
+
+     
+      <span onInput="validateDate(this.value, 'exDate')">
+      <input placeholder= "MM" name="month" size="2" class="exDate" />
+      <input placeholder= "YYYY" name="year" size="2" class="exDate" />
+     </span><br>
+
+    <input type="submit" value ="Submit Order"/>
+    <input type="reset"  value ="Cancel Order"/>
+    </div>
+    </div>
+    </form>
+
+    <footer>
+            2017 &copy; Makram Ibrahim 
+        </footer>
+	</body>
+	
+</html>

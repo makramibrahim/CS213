@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CS 213 Week 06 Ponder and Prove</title>
+    <script type="text/javascript" src="ponder06.js"></script>
+
+    <style type="text/css">
+        form, pre {
+            margin-left: 20px;
+            font-family: Verdana, Geneva, sans-serif;
+            padding: 6px;
+            width: 550px;
+            font-size: 12px;
+            border: 1px solid rgb(0, 90, 136);
+            border-radius: 4px;
+        }
+
+        h2 {
+            border-bottom-style: solid;
+        }
+    </style>
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.6.9.5092-10" ></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe'); });</script><script type="text/javascript">function lti_launch( vars ) { var query = ''; for(var key in vars) { if(query.length == 0) { query += '?' + key + '=' + encodeURIComponent(vars[key]); } else { query += '&' + key + '=' + encodeURIComponent(vars[key]); } } location.replace( '/d2l/customization/pearsonlti/6606/Launch' + query ); }</script></head>
+
+<body>
+<ul>
+  <li><a href="/~imakram/index.html">CS 213 Assignments</a></li> 
+</ul>
+<!-- First problem: Age -->
+<h2>#1: Age</h2>
+<p>Please indicate your age: 0-118 years</p>
+
+<div>
+    <input onkeyup="validateAge(this.value, 'age1');" size="3"/>
+    <span class="age1" style='color:red'>Invalid age</span>
+</div>
+<div>
+    <input onkeyup="validateAge(this.value, 'age2');" size="3"/>
+    <span class="age2" style='color:red'>Invalid age</span>
+</div>
+
+
+
+<!-- Second problem: SSN -->
+<h2>#2: SSN</h2>
+<p>Please enter a Social Security Number: 000-00-0000</p>
+
+<div>
+    <input onkeyup="validateSocialSecurity(this.value, 'SSN1');" size="11"/>
+    <span class="SSN1" style='color:red'>Invalid SSN</span>
+</div>
+<div>
+     <input onkeyup="validateSocialSecurity(this.value, 'SSN2');" size="11"/>
+    <span class="SSN2" style='color:red'>Invalid SSN</span>
+</div>
+
+<!-- Third problem: Credit Card Number -->
+<h2>#3: Credit Card Number</h2>
+<p>Please enter a credit card number: 0000 0000 0000 0000</p>
+
+<div>
+    <input onkeyup="validateCreditCard(this.value, 'num1')"  size="19"/>
+    <span class="num1" style='color:red'>Invalid credit card number</span>
+</div>
+<div>
+    <input onkeyup="validateCreditCard(this.value, 'num2')" size="19"/>
+    <span class="num2" style='color:red'>Invalid credit card number</span>
+</div>
+
+
+<!-- Fourth problem: Date -->
+<h2>#4: Date</h2>
+<p>Please enter a date: m/d/yyyy</p>
+
+<div>
+    <input onkeyup="validateDate(this.value, 'date1')" size="9"/>
+    <span class="date1" style='color:red'>Invalid date</span>
+</div>
+<div>
+    <input onkeyup="validateDate(this.value, 'date2')" size="9"/>
+    <span class="date2" style='color:red'>Invalid date</span>
+</div>
+
+
+<!-- Fifth problem: Abbreviation -->
+<h2>#5: State Abbreviation</h2>
+<p>Please enter a 2-letter state abbreviation</p>
+
+<div>
+    <input onkeyup="validateStates(this.value, 'state1')" size="2"/>
+    <span class="state1" style='color:red'>Invalid state abbreviation</span>
+</div>
+<div>
+    <input onkeyup="validateStates(this.value, 'state2')" size="2"/>
+    <span class="state2" style='color:red'>Invalid state abbreviation</span>
+</div>
+
+
+<!-- Sixth problem: Money  -->
+<h2>#6: Dollar Amount</h2>
+<p>Please enter an amount in US dollars</p>
+
+<div>
+    <input onkeyup="validateDollarAmount(this.value, 'dollar1')" size="10"/>
+    <span class="dollar1" style='color:red'>Invalid money amount</span>
+</div>
+<div>
+    <input onkeyup="validateDollarAmount(this.value, 'dollar2')" size="10"/>
+    <span class="dollar2" style='color:red'>Invalid money amount</span>
+</div>
+
+</body>
+</html>

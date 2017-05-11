@@ -1,0 +1,43 @@
+/*************************
+* external CSS file
+**************************/
+.header{
+		background-color: black;
+		padding: 1em;
+		color: white;
+		text-align: center;
+}
+
+.footer{
+		background-color: black;
+		margin-top: 35em;
+		padding: 1em;
+		text-align: center;
+		color: white;
+}
+
+body{
+	background-position: center;
+	border: 5px solid blue;
+	background-size: 900px 770px;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+
+}
+
+nav ul{
+	color: white;
+	text-align: left;
+	list-style-type: none;
+	background-clip: 20px;
+}
+
+nav ul a {
+	color: blue;
+	text-align: left;
+	text-decoration: none;
+}
+
+a:hover{
+	color: red;
+}

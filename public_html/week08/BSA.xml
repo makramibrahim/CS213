@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+
+<bsa> <!--root tree-->
+	<council name="parents"> <!--the parents for troop and scout-->
+		<troop number="2" unitName="child"> <!--child council-->
+
+			<!-- all elements in scout listed here--> 
+			<scout>
+				<firstName>Alberto</firstName>
+				<lastName>Razo</lastName>
+
+				<!-- list all the child address here -->
+				<address>
+					<street>35 Center St</street>
+					<city>Provo</city>
+					<state>Utah</state>
+				</address>
+
+				<!--get phone number element-->
+			 	<phoneNumber>333-444-9999</phoneNumber>
+			 	<!--The rank element has a required date-earned attribute-->
+
+			 	<rank dateEarned="12/12/2012" content="Eagle"/>
+			 	<!--The meritbadge element has a required date-earned attribute-->
+			 	<meritbadge dateEarned="11/11/2011" content="First Aid"/>
+			</scout>
+		</troop>
+	</council>
+</bsa>

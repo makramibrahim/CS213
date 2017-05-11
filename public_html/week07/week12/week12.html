@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Ryan Gillett's Assignment #12</title>
+  <link rel="stylesheet" type="text/css" href="week12.css">
+  <script type="text/javascript" src="week12.js"></script>
+</head>
+
+<body>
+
+  <div id="navigation">
+    <span onclick="togglePurchases()">Select Package</span>
+    >
+    <span onclick="togglePayment()">Enter Payment & Shipping Information</span>
+    >
+    <span onclick="toggleConfirm()">Review & Confirm</span>
+  </div>
+  
+  <form action="week12.php" method="post">
+    <div id="purchases">
+      <h3>Choose your package:</h3>
+      <input type="radio" name="package" value="standard" onclick="toggleStandard()" /> Standard
+      <input type="radio" name="package" value="premium" checked onclick="togglePremium()" /> Premium
+      <input type="radio" name="package" value="professional" onclick="toggleProfessional()" /> Professional
+      <br />
+      <h3>What You'll Get:</h3>
+      </br>
+      <ul id="standard">
+        <li>3" length</li>
+        <li>1.75 in. diameter handle</li>
+        <li>Your choice of color (Blue, Green, Purple, Red)</li>
+        <li>Personal Training Kit</li>
+        <li>First aid kit</li>
+        <li>Price: $65.95</li>
+      </ul>
+      <ul id="premium">
+        <li>Includes all of the standard features, plus...</li>
+        <li>Twice as cool</li>
+        <li>Extended battery life</li>
+        <li>Added sound effects</li>
+        <li>Lifetime replacement warranty</li>
+        <li>Price: $92.29</li>
+      </ul>
+      <ul id="professional">
+        <li>Includes all of the premium features, plus...</li>
+        <li>Enough for up to 50 employees</li>
+        <li>Access to our exclusive support line</li>
+        <li>Invitations to monthly events and conferences in your area</li>
+        <li>Customized training to fit the specific needs of your organization</li>
+        <li>The most advanced product package on the market</li>
+        <li>Price: $1,980.95</li>
+      </ul>
+    </div>
+    
+    <div id="paymentAndShipping">
+      <div id="billing">
+        <h3>Billing Informtion:</h3>
+
+        <span class="required field">
+          <label>First Name:</label>
+          <span class="invalidMessage" id="validBillingFName"></span>
+          <br />
+          <input type="text" name="billingFName" onBlur="validateField(this.value, document.getElementById('validBillingFName'))" />
+        </span>
+        <span class="required field">
+          <label>Last Name:</label>
+          <span class="invalidMessage" id="validBillingLName"></span>
+          <br />
+          <input type="text" name="billingLName" onBlur="validateField(this.value, document.getElementById('validBillingLName'))" />
+        </span>
+        <br />
+        <span class="required field">
+          <label>Card Number:</label>
+          <span class="invalidMessage" id="validCardNumber"></span>
+          <br />
+          <input type="text" name="cardNumber" onBlur="validateCard(this.value, document.getElementById('validCardNumber'))" />
+        </span>
+        <span class="required field">
+          <label>Expiration Date:</label>
+          <span class="invalidMessage" id="validExpiration"></span>
+          <br />
+          <input type="text" name="expirationMonth" class="month" maxlength="2" placeholder="mm" onBlur="validateMonth(this.value, document.getElementById('validExpiration'))" />
+          <span>/</span>
+          <input type="text" name="expirationYear" class="year" maxlength="2" placeholder="yy" onBlur="validateYear(this.value, document.getElementById('validExpiration'))" />
+        </span>
+        <br />
+        <span class="required field">
+          <label>Billing Address Line 1:</label>
+          <span class="invalidMessage" id="validBillingAddress1"></span>
+          <br />
+          <input type="text" name="billingAddress1" onBlur="validateField(this.value, document.getElementById('validBillingAddress1'))" />
+        </span>
+        <br />
+        <span class="field">
+          <label>Billing Address Line 2:</label>
+          <br />
+          <input type="text" name="billingAddress2" />
+        </span>
+        <br />
+        <span class="required field">
+          <label>Billing City:</label>
+          <span class="invalidMessage" id="validBillingCity"></span>
+          <br />
+          <input type="text" name="billingCity" onBlur="validateField(this.value, document.getElementById('validBillingCity'))" />
+        </span>
+        <span class="required field">
+          <label>State:</label>
+          <span class="invalidMessage" id="validBillingState"></span>
+          <br />
+          <input type="text" name="billingState" class="state" maxlength="2" onBlur="validateStates(this.value, document.getElementById('validBillingState'))" />
+        </span>
+        <span class="required field">
+          <label>Zip:</label>
+          <span class="invalidMessage" id="validBillingZip"></span>
+          <br />
+          <input type="text" name="billingZip" class="zip" onBlur="validateZip(this.value, document.getElementById('validBillingZip'))" />
+        </span>
+        <br />
+        <span class="field">
+          <label>Phone Number:</label>
+          <br />
+          <input type="text" name="billingPhone" onBlur="validateFields()" />
+        </span>
+        <br /><br />
+      
+        <input type="checkbox" name="shippingCheckBox" id="shippingCheckBox" onchange="toggleShippingAddress()" />
+        <label>My shipping address is different from my billing address</label>
+      </div>
+    
+      <div id="shipping">
+        <h3>Shipping Information:</h3>
+      
+        <span class="required field">
+          <label>First Name:</label>
+          <span class="invalidMessage" id="validShippingFName"></span>
+          <br />
+          <input type="text" name="shippingFName" onBlur="validateField(this.value, document.getElementById('validShippingFName'))" />
+        </span>
+        <span class="required field">
+          <label>Last Name:</label>
+          <span class="invalidMessage" id="validShippingLName"></span>
+          <br />
+          <input type="text" name="shippingLName" onBlur="validateField(this.value, document.getElementById('validShippingLName'))" />
+        </span>
+        <br />
+        <span class="required field">
+          <label>Shipping Address Line 1:</label>
+          <span class="invalidMessage" id="validShippingAddress1"></span>
+          <br />
+          <input type="text" name="shippingAddress1" onBlur="validateField(this.value, document.getElementById('validShippingAddress1'))" />
+        </span>
+        <br />
+        <span class="field">
+          <label>Shipping Address Line 2:</label>
+          <br />
+          <input type="text" name="shippingAddress2" />
+        </span>
+        <br />
+        <span class="required field">
+          <label>Shipping City:</label>
+          <span class="invalidMessage" id="validShippingCity"></span>
+          <br />
+          <input type="text" name="shippingCity" onBlur="validateField(this.value, document.getElementById('validShippingCity'))" />
+        </span>
+        <span class="required field">
+          <label>State:</label>
+          <span class="invalidMessage" id="validShippingState"></span>
+          <br />
+          <input type="text" name="shippingState" class="state" maxlength="2" onBlur="validateStates(this.value, document.getElementById('validShippingState'))" />
+        </span>
+        <span class="required field">
+          <label>Zip:</label>
+          <span class="invalidMessage" id="validShippingZip"></span>
+          <br />
+          <input type="text" name="shippingZip" class="zip" onBlur="validateZip(this.value, document.getElementById('validShippingZip'))" />
+        </span>
+        <br />
+        <span class="required field">
+          <label>Phone Number:</label>
+          <span class="invalidMessage" id="validShippingPhone"></span>
+          <br />
+          <input type="text" name="shippingPhone" onBlur="validatePhone(this.value, document.getElementById('validShippingPhone'))" />
+        </span>
+      </div>
+    </div>
+    
+    <div id="confirm">
+      <p>
+        Package Price: <span id="price"></span>
+        <br />
+        Shipping: <span id="shippingCost"></span>
+        <br />
+        Tax Amount: <span id="tax"></span>
+        <hr />
+        Total: <span id="total"></span>
+      </p>
+      <button>Confirm Purchase</button>
+    </div>
+    
+    <br/><br/>
+    <input type="reset" value="Reset" />
+  </form>
+</body>
+</html>

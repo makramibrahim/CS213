@@ -1,0 +1,114 @@
+<html>
+<head>
+<script>
+function ajax_post(){
+    // Create our XMLHttpRequest object
+    var http = new XMLHttpRequest();
+    // Create some variables we need to send to our PHP file
+     var fName = document.getElementById("fName").value;
+     var lName = document.getElementById("lName").value;
+     var phoneNumber = document.getElementById("phoneNumber").value;
+     var email = document.getElementById("email").value;
+     var stAddress = document.getElementById("stAddress").value;
+     var city = document.getElementById("city").value;
+     var state = document.getElementById("state").value;
+     var zip = document.getElementById("zip").value;
+     var cardtype = document.getElementById("cardtype").value;
+     var visaCard = document.getElementById("visaCard").value;
+     var month = document.getElementById("month").value;
+     var year = document.getElementById("year").value;
+
+     var get = "fName=" + fName +"&lName="+ lName + "<br>" +
+               "Phone Number: " + phoneNumber + "<br>" +
+                "Email: " + email + "<br>" + 
+                "Street Address: " + stAddress + "<br>" +
+                "City: " + city + "<br>" +
+                "State: " + state + "<br>" +
+                "Zip: " + zip + "<br>" +
+                "Card Type: " + cardtype + "<br>" +
+                "Card #: "+ visaCard + "<br>" +
+                "Exp: " + month  + "/" + year;
+                
+     //    "phoneNumber" + phoneNumber];
+
+    http.open("POST", "file.php", true);
+    // Set content type header information for sending url encoded variables in the request
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // Access the onreadystatechange event for the XMLHttpRequest object
+    http.onreadystatechange = function() {
+        if(http.readyState == 4 && http.status == 200) {
+            var return_data = http.responseText;
+            document.getElementById("status").innerHTML = return_data;
+        }
+    }
+    // Send the data to PHP now... and wait for response to update the status div
+    http.send(get); // Actually execute the request
+
+    document.getElementById("status").innerHTML =  return_data;
+}
+
+</script>
+</head>
+<body>
+<h2>Ajax Post to PHP and Get Return Data</h2>
+
+<div id="Checkout" class="container center menu padding-64 xlarge">
+       <!--presonal information-->
+     <div class="personalInfo">
+         <h4 style="color:red"><b>*All fields are required</b></h4>
+    <input onkeyup="validateFirstName(this.value, 'firstName')"
+           placeholder="Frist Name" id="fName" name="fName"/>
+    <span class="firstName" style="color:red"><b>*</b></span><br>
+         
+    <input onkeyup="validateLastName(this.value, 'lastName')"
+           placeholder= "Last Name" id="lName" name="lName"/>
+    <span class="lastName" style="color:red">*</span><br>
+         
+    <input onkeyup="validatePhoneNumber(this.value, 'phoneNumber')"
+           placeholder= "Phone Number" id="phoneNumber" name="phoneNumber"/>
+    <span class="phoneNumber" style="color:red"><b>*</b></span><br>
+         
+    <input type="email" onInput="validateEmail(this.value, 'email')" placeholder="Email" id="email" name="email"/>
+    <span class="email" style="color:red"><b>*</b></span><br>
+             
+    <input onInput="validateStreet(this.value, 'street')" 
+     placeholder= "Street Address" id="stAddress" name="stAddress"/>
+    <span class="street" style="color:red"><b>*</b></span><br>
+         
+    <input onInput="validateCity(this.value, 'city')" 
+     placeholder= "City" id="city" name="city"/>
+    <span class="city" style="color:red">*</span><br>
+         
+    <input onInput="validateStates(this.value, 'states')" 
+     placeholder= "State Abbreviation" id="state" name="state"/>
+    <span class="states" style="color:red"><b>*</b></span><br>
+         
+    <input onkeyup="validateZip(this.value, 'zip')" placeholder="Zip Code" id="zip" name="zip"/>
+    <span class="zip" style="color:red"><b>*</b></span><br>
+         
+    </div>  
+      <div class="creditCard">
+        
+     <select name="cardtype" id="cardtype">
+        <option value="Visa">Visa</option>
+        <option value="Master">Master</option>
+        <option value="Discove">Discove</option>
+        <option value="American">American</option>
+    </select><br>
+        
+    <input onInput="validateCreditCard(this.value, 'num')" 
+     placeholder= "0000 0000 0000 0000" id="visaCard" name="visaCard"/>
+     <span class="num" style="color:red"><b>*</b></span><br>
+
+     
+      <span onInput="validateDate(this.value, 'exDate')">
+      <input placeholder= "MM"   id="month" name="month" size="2" class="exDate" />
+      <input placeholder= "YYYY" id="year" name="year" size="2" class="exDate" />
+     </span><br>
+
+    <input name="myBtn" type="submit" value="Submit Order" onclick="ajax_post();">
+    <input type="reset"  value ="Cancel Order"/> <br><br>
+   
+   
+</body>
+</html>

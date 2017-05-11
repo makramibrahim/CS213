@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="BSA.xsl"?>
+<bsa> 
+<council name="COUNCIL"> 
+	<troop number="1" unitName="TROOP"> 
+		<scout>
+			<firstName>Alberto</firstName>
+			<lastName>Razo</lastName>
+
+			<address>
+				<street>35 Center St</street>
+				<city>Provo</city>
+				<state>Utah</state>
+			</address>
+			 <phoneNumber>333-444-9999</phoneNumber>
+			 <rank dateEarned="2/16/2012" content="1stClass"/>
+			 <meritbadge dateEarned="12/12/2014" content="Airplane"/>
+			 <rank dateEarned="12/31/2010" content="iPhone"/>
+			 <meritbadge dateEarned="10/12/2014" content="Shopping"/>
+			</scout>
+
+			<scout>
+			<firstName>Justin</firstName>
+			<lastName>Ceito</lastName>
+
+			<address>
+				<street>50 UN Ave St</street>
+				<city>Ridgewood</city>
+				<state>New York</state>
+			</address>
+
+			 <phoneNumber>201-423-5785</phoneNumber>
+		        <rank dateEarned="1/6/2002" content="2ndClass"/>
+		        <rank dateEarned="11/26/2010" content="2ndClass"/>
+                <meritbadge dateEarned="11/13/2005" content="Nuclear Science"/>
+                <meritbadge dateEarned="4/12/2015" content="Swimming"/>
+			</scout>
+
+			<scout>
+			<firstName>Hany</firstName>
+			<lastName>Mitaipi</lastName>
+
+			<address>
+				<street>113 N 300 W St</street>
+				<city>Little Town</city>
+				<state>California</state>
+			</address>
+
+			 <phoneNumber>245-678-8675</phoneNumber>
+		        <rank dateEarned="9/3/2005" content="3ndClass"/>
+                <meritbadge dateEarned="6/2/2001" content="PC Laptop"/>
+                <rank dateEarned="10/13/2015" content="3ndClass"/>
+                <meritbadge dateEarned="6/30/2002" content="Honda"/>
+                <rank dateEarned="2/22/20011" content="3ndClass"/>
+                <meritbadge dateEarned="10/29/2012" content="Macbook"/>
+			</scout>
+		</troop>
+		<troop number="2" unitName="TROOP"> 
+		<scout>
+			<firstName>Ali</firstName>
+			<lastName>Ahmed</lastName>
+
+			<address>
+				<street>22nd Tosta Cora</street>
+				<city>Rina</city>
+				<state>Florida</state>
+			</address>
+
+			 <phoneNumber>345-445-2345</phoneNumber>
+			 <rank dateEarned="12/31/2012" content="4thClass"/>
+			 <meritbadge dateEarned="9/29/1993" content="Moon"/>
+			 <rank dateEarned="2/17/2009" content="Vedio Game"/>
+			 <meritbadge dateEarned="10/12/2014" content="Car"/>
+			 <rank dateEarned="7/14/2003" content="Xbox"/>
+			 <meritbadge dateEarned="1/31/2004" content="Football"/>
+			</scout>
+			<scout>
+			<firstName>Justin</firstName>
+			<lastName>Ceito</lastName>
+
+			<address>
+				<street>501 West Ave St</street>
+				<city>Undergo</city>
+				<state>Teaxs</state>
+			</address>
+
+			 <phoneNumber>201-423-5785</phoneNumber>
+		        <rank dateEarned="1/6/2002" content="5thClass"/>
+                <meritbadge dateEarned="11/13/2005" content="Nuclear Science"/>
+			</scout>
+
+			<scout>
+			<firstName>Ali</firstName>
+			<lastName>Ahmed</lastName>
+
+			<address>
+				<street>22nd Tosta Cora</street>
+				<city>Rina</city>
+				<state>Florida</state>
+			</address>
+			
+			 <phoneNumber>345-445-2345</phoneNumber>
+			 <rank dateEarned="12/31/2012" content="6thClass"/>
+			 <meritbadge dateEarned="9/29/1993" content="Moon"/>
+			 <rank dateEarned="2/17/2009" content="Vedio Game"/>
+			 <meritbadge dateEarned="10/12/2014" content="Car"/>
+			 <rank dateEarned="7/14/2003" content="Xbox"/>
+			 <meritbadge dateEarned="1/31/2004" content="Football"/>
+			</scout>
+			<scout>
+			<firstName>Justin</firstName>
+			<lastName>Ceito</lastName>
+
+			<address>
+				<street>501 West Ave St</street>
+				<city>Undergo</city>
+				<state>Teaxs</state>
+			</address>
+
+			 <phoneNumber>201-423-5785</phoneNumber>
+		        <rank dateEarned="1/6/2002" content="7thClass"/>
+                <meritbadge dateEarned="11/13/2005" content="Nuclear Science"/>
+			</scout>
+		</troop>
+
+		<troop number="3" unitName="TROOP"> 
+		<scout>
+			<firstName>Alberto</firstName>
+			<lastName>Razo</lastName>
+
+			<address>
+				<street>35 Center St</street>
+				<city>Provo</city>
+				<state>Utah</state>
+			</address>
+			 <phoneNumber>333-444-9999</phoneNumber>
+			 <rank dateEarned="2/16/2012" content="1stClass"/>
+			 <meritbadge dateEarned="12/12/2014" content="Airplane"/>
+			 <rank dateEarned="12/31/2010" content="iPhone"/>
+			 <meritbadge dateEarned="10/12/2014" content="Shopping"/>
+			</scout>
+
+			<scout>
+			<firstName>Justin</firstName>
+			<lastName>Ceito</lastName>
+
+			<address>
+				<street>50 UN Ave St</street>
+				<city>Ridgewood</city>
+				<state>New York</state>
+			</address>
+
+			 <phoneNumber>201-423-5785</phoneNumber>
+		        <rank dateEarned="1/6/2002" content="2ndClass"/>
+		        <rank dateEarned="11/26/2010" content="2ndClass"/>
+                <meritbadge dateEarned="11/13/2005" content="Nuclear Science"/>
+                <meritbadge dateEarned="4/12/2015" content="Swimming"/>
+			</scout>
+
+			<scout>
+			<firstName>Hany</firstName>
+			<lastName>Mitaipi</lastName>
+
+			<address>
+				<street>113 N 300 W St</street>
+				<city>Little Town</city>
+				<state>California</state>
+			</address>
+
+			 <phoneNumber>245-678-8675</phoneNumber>
+		        <rank dateEarned="9/3/2005" content="3ndClass"/>
+                <meritbadge dateEarned="6/2/2001" content="PC Laptop"/>
+                <rank dateEarned="10/13/2015" content="3ndClass"/>
+                <meritbadge dateEarned="6/30/2002" content="Honda"/>
+                <rank dateEarned="2/22/20011" content="3ndClass"/>
+                <meritbadge dateEarned="10/29/2012" content="Macbook"/>
+			</scout>
+		</troop>
+		<troop number="4" unitName="TROOP"> 
+		<scout>
+			<firstName>Ali</firstName>
+			<lastName>Ahmed</lastName>
+
+			<address>
+				<street>22nd Tosta Cora</street>
+				<city>Rina</city>
+				<state>Florida</state>
+			</address>
+
+			 <phoneNumber>345-445-2345</phoneNumber>
+			 <rank dateEarned="12/31/2012" content="4thClass"/>
+			 <meritbadge dateEarned="9/29/1993" content="Moon"/>
+			 <rank dateEarned="2/17/2009" content="Vedio Game"/>
+			 <meritbadge dateEarned="10/12/2014" content="Car"/>
+			 <rank dateEarned="7/14/2003" content="Xbox"/>
+			 <meritbadge dateEarned="1/31/2004" content="Football"/>
+			</scout>
+			<scout>
+			<firstName>Justin</firstName>
+			<lastName>Ceito</lastName>
+
+			<address>
+				<street>501 West Ave St</street>
+				<city>Undergo</city>
+				<state>Teaxs</state>
+			</address>
+
+			 <phoneNumber>201-423-5785</phoneNumber>
+		        <rank dateEarned="1/6/2002" content="5thClass"/>
+                <meritbadge dateEarned="11/13/2005" content="Nuclear Science"/>
+			</scout>
+
+			<scout>
+			<firstName>Ali</firstName>
+			<lastName>Ahmed</lastName>
+
+			<address>
+				<street>22nd Tosta Cora</street>
+				<city>Rina</city>
+				<state>Florida</state>
+			</address>
+			
+			 <phoneNumber>345-445-2345</phoneNumber>
+			 <rank dateEarned="12/31/2012" content="6thClass"/>
+			 <meritbadge dateEarned="9/29/1993" content="Moon"/>
+			 <rank dateEarned="2/17/2009" content="Vedio Game"/>
+			 <meritbadge dateEarned="10/12/2014" content="Car"/>
+			 <rank dateEarned="7/14/2003" content="Xbox"/>
+			 <meritbadge dateEarned="1/31/2004" content="Football"/>
+			</scout>
+			<scout>
+			<firstName>Justin</firstName>
+			<lastName>Ceito</lastName>
+
+			<address>
+				<street>501 West Ave St</street>
+				<city>Undergo</city>
+				<state>Teaxs</state>
+			</address>
+
+			 <phoneNumber>201-423-5785</phoneNumber>
+		        <rank dateEarned="1/6/2002" content="7thClass"/>
+                <meritbadge dateEarned="11/13/2005" content="Nuclear Science"/>
+			</scout>
+		</troop>
+
+		<troop number="5" unitName="TROOP"> 
+		<scout>
+			<firstName>Alberto</firstName>
+			<lastName>Razo</lastName>
+
+			<address>
+				<street>35 Center St</street>
+				<city>Provo</city>
+				<state>Utah</state>
+			</address>
+			 <phoneNumber>333-444-9999</phoneNumber>
+			 <rank dateEarned="2/16/2012" content="1stClass"/>
+			 <meritbadge dateEarned="12/12/2014" content="Airplane"/>
+			 <rank dateEarned="12/31/2010" content="iPhone"/>
+			 <meritbadge dateEarned="10/12/2014" content="Shopping"/>
+			</scout>
+
+			<scout>
+			<firstName>Justin</firstName>
+			<lastName>Ceito</lastName>
+
+			<address>
+				<street>50 UN Ave St</street>
+				<city>Ridgewood</city>
+				<state>New York</state>
+			</address>
+
+			 <phoneNumber>201-423-5785</phoneNumber>
+		        <rank dateEarned="1/6/2002" content="2ndClass"/>
+		        <rank dateEarned="11/26/2010" content="2ndClass"/>
+                <meritbadge dateEarned="11/13/2005" content="Nuclear Science"/>
+                <meritbadge dateEarned="4/12/2015" content="Swimming"/>
+			</scout>
+
+			<scout>
+			<firstName>Hany</firstName>
+			<lastName>Mitaipi</lastName>
+
+			<address>
+				<street>113 N 300 W St</street>
+				<city>Little Town</city>
+				<state>California</state>
+			</address>
+
+			 <phoneNumber>245-678-8675</phoneNumber>
+		        <rank dateEarned="9/3/2005" content="3ndClass"/>
+                <meritbadge dateEarned="6/2/2001" content="PC Laptop"/>
+                <rank dateEarned="10/13/2015" content="3ndClass"/>
+                <meritbadge dateEarned="6/30/2002" content="Honda"/>
+                <rank dateEarned="2/22/20011" content="3ndClass"/>
+                <meritbadge dateEarned="10/29/2012" content="Macbook"/>
+			</scout>
+		</troop>
+	</council>
+</bsa>
+
+

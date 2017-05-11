@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html id="html2">
+	<head>
+        <title>CS 213 | Week 07</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="e-commerce company">
+        <meta name="keywords" content=", ">
+        <meta name="author" content="Makram Ibrahim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+       <link href="css/bootstrap.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="week07.css" rel="stylesheet">
+       <script type="text/javascript" src="justOnce.js"></script>   
+
+	</head>
+	<body id="bodyBook">
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+            </div>
+              
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+        <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/dubaiYellow.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 id="h1p2">Welcome to AliHotels in Dubai</h1>
+              </div>
+              </div>
+              </div>
+              </div>
+            </div><!-- /.carousel -->
+
+         
+       <div class="container">
+        <div class="container1">
+            
+          <h3 style="text-align=cetner">50% Discount for One Week</h3>
+       
+            <!--Table one does include one night and two only-->
+            <table class="table1">    
+       <thead>
+    <tr>
+        <th col="3">Get Your Best Week NOW</th>
+    </tr>
+        </thead>
+         <tbody>
+         <tr>
+        <td><lable><input type="checkbox" id="input1" onclick="getInputStayPrice();">
+         Select $2289.99 (One Week)<br>
+         Includes: <br>
+         5 Nights at AliHotles<br>
+         4x4 Dubai Desert Safari<br>
+         Dubai Atlantis Aquaventure<br>
+         City Tuor of Abu Dhabi
+         </lable></td>
+        <td></td>
+             </tr>
+            </tbody>
+            </table>  
+        </div>
+
+     <div class="container2">
+            
+         <h3>Your Vacation Open Food</h3>
+             
+             <!--Table three does include one meal per day-->
+        
+     <table class="table3">    
+       <thead>
+    <tr>
+        <th col="3">One Weeks Meals</th>
+    </tr>
+        </thead>
+         <tbody>
+         <tr>
+         <td><lable><input type="checkbox" id="input1" onclick="getInputFoodPrice();">
+         Select $980.99 (3 Meals)<br>
+         Includes:<br>
+         Break Fast From 6 AM to 10 AM.<br>
+         Lunch From 12 PM to 3 PM.<br>
+         Dinner From 5 PM to 8 PM.
+          </lable></td>
+        <td></td>
+             </tr>
+            </tbody>
+            </table>
+        </div>
+           </div>
+             
+             <!--Table four does include three meal per day-->
+        
+    <div class="payInfo">
+        
+       <div id="cart">
+    
+    <!--CART information-->
+        <h2>CART</h2>
+    <div id="totalPrice">Total Amount Due $0.00</div>  
+    <div id="totalPrice2"></div>  
+    <!--<div id="totalPrice2"></div>--> 
+    <br><br>
+    </div>
+        
+    <!--presonal information-->
+     <div class="personalInfo">
+         
+    <input onkeyup="validateFirstName(this.value, 'firstName')"
+           placeholder= "Frist Name"/>
+    <span class="firstName" style="color:red">Invalid Input</span><br>
+         
+    <input onkeyup="validateLastName(this.value, 'lastName')"
+           placeholder= "Last Name"/>
+    <span class="lastName" style="color:red">Invalid Input</span><br>
+         
+    <input onkeyup="validatePhoneNumber(this.value, 'phoneNumber')"
+           placeholder= "Phone Number"/>
+    <span class="phoneNumber" style="color:red">Invalid Input</span><br>
+         
+    <input type="email" onInput="validateEmail(this.value, 'email')"            placeholder="Email">
+    <span class="email" style="color:red">Invalid Input</span><br>
+             
+    <input onInput="validateStreet(this.value, 'street')" 
+     placeholder= "Street Address"/>
+    <span class="street" style="color:red">Invalid Input</span><br>
+         
+    <input onInput="validateCity(this.value, 'city')" 
+     placeholder= "City"/>
+    <span class="city" style="color:red">Invalid Input</span><br>
+         
+    <input onInput="validateStates(this.value, 'states')" 
+     placeholder= "State Abbreviation "/>
+    <span class="states" style="color:red">Invalid Input</span><br>
+         
+    <input onkeyup="validateZip(this.value, 'zip')" placeholder="Zip Code"/>
+    <span class="zip" style="color:red">Invalid Input</span><br>
+         
+    </div> 
+        
+        <!--Credit Card info-->                 
+    <div class="creditCard">
+        
+     <select name="cardtype" id="cardtype">
+        <option value="visa">Visa</option>
+        <option value="master">Master</option>
+        <option value="discover">Discove</option>
+         <option value="discover">America</option>
+    </select><br>
+        
+    <input onInput="validateCreditCard(this.value, 'num')" 
+     placeholder= "0000 0000 0000 0000"/>
+    <span class="num" style="color:red">Invalid Input</span><br>
+        
+     <input onInput="validateDate(this.value, 'exDate')" 
+     placeholder= "00/00"/>
+    <span class="exDate" style="color:red">Invalid Input</span><br>                  
+        <button type="reset" onclick="reset();">Reset</button>
+        <button type="submit" onclick="submit();">Submit</button>
+        </div>
+        </div>
+        
+    <footer>
+            2017 &copy; Makram Ibrahim 
+        </footer>
+	</body>
+	
+</html>

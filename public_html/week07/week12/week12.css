@@ -1,0 +1,86 @@
+body
+{
+    background-color:#E9FFFF;
+}
+
+#navigation span
+{
+    cursor: pointer;
+    color: blue;
+}
+
+#paymentAndShipping, #confirm, #shipping
+{
+    display: none;
+}
+
+span.field
+{
+    display: inline-block;
+}
+
+span.required:before
+{
+    content: "*";
+    color: red;
+}
+
+span.field input.state
+{
+    width: 48px;
+}
+
+span.field input.zip
+{
+    width: 72px;
+}
+
+span.field input.month
+{
+    width: 28px;
+}
+
+span.field input.year
+{
+    width: 28px;
+}
+
+form
+{
+    position: relative;
+    display: inline-block;
+}
+
+form div
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px;
+}
+
+#standard
+{
+    display: none;
+}
+
+#professional
+{
+    display: none;
+}
+
+#confirm p
+{
+    text-align: left;
+}
+
+#confirm p span
+{
+    float: right;
+}
+
+.invalidMessage
+{
+    color: red;
+    font-size: 11px;
+    font-style: italic;
+}

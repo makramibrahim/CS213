@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://byui.brightspace.com/content/enforced/195544-Online.2017.Winter.CS213.03/week03.html# -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Week 03 : CSS</title>
+<meta charset="UTF-8&quot;">
+<style>
+	
+/*Style Sheet 01*/
+
+
+</style>
+
+<style>
+
+/*Style Sheet 02*/
+#title{
+  text-align: center;
+  background-color: dodgerblue;
+  padding: 1em;
+  color: white;
+  border-radius: 25px;
+}
+
+body{
+  background-image: radial-gradient(blue, wheat);
+  padding: 5em;
+
+}
+
+.menuBarItem{
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  border: 1px solid;
+  border-radius: 20px;
+  margin:5px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 3em
+}
+
+li{
+    float: left;
+    padding: 1em;
+    background-color: blue;
+    color: lightblue;
+}
+
+a.content{
+  text-decoration: none;
+  text-align: center;
+  background-color: blue;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  border: 1px solid;
+  border-radius: 1px;
+  margin:5px;
+}
+
+
+#text{
+  border: 2px solid lightblue; 
+  background-color: white;
+  padding: 5em;
+  margin-left: 3em;
+  border-radius: 25px;
+}
+
+
+#bottom{
+  text-align: center;
+  background-color: dodgerblue;
+  padding: 1em;
+  color: white;
+  border-radius: 25px;
+
+}
+#sidebar{
+  text-align: center; 
+  background-color: white;
+  padding: 5em;
+  margin-left: 3em;
+  border-radius: 25px; 
+}
+
+h1{
+  font-family: monospace;
+  font-size: 18px;
+  text-align: center;
+  border-color: blue;
+}
+
+/*=======links======== */
+a:link{
+   color: white;
+   background-color: blue;
+   padding: 7px;
+   margin-left: 80px;
+   border-radius: 25px; 
+   doc
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+li:link {
+   color: white;
+}
+
+li:visited {
+    color: red;
+}
+
+li:hover {
+    color: lightblue;
+}
+
+
+</style>
+
+<style>
+/* Stylesheet 3 */
+h1{
+  color:red;
+  text-align: center;
+  font-size: 300%;
+  background-color: black;
+}
+
+p{
+  color:purple;
+  font-size:  30px;
+  margin-left:150;
+}
+.content{
+  background-color: pink;
+  margin:auto;
+}
+.document{
+  background-color: #B3544BFF;
+  border-style: dotted;
+}
+#title{
+  margin-left:0
+  color:red; 
+}
+
+
+ul{
+  width:170px;
+  margin-left: 130px;
+}
+
+#text{
+  background-color: lightgreen;
+  
+}
+#menuBar{
+  padding: 10px;
+  width:200px;
+}
+a{
+  display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 150px
+}
+#sidebar{
+background-color: yellow;
+font-size: 40px;
+margin:auto;
+margin-bottom:30px;
+width: 50%;
+}
+
+h3{
+color:red;
+text-align: center;
+}
+
+#bottom{
+color: #1EBAE0FF;
+font-size: 20px;
+}
+
+</style>
+
+<style>
+/* Stylesheet 4 */
+    
+h1 {
+  margin-left: 150px;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: crimson;
+  background-color: darkkhaki;
+  width: 1000px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-radius: 3px 3px;
+}
+#menuBar {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 20px 10px 15px;
+
+  color: crimson;
+  text-align: center;
+  background: darkkhaki;
+  width: 980px;
+  margin-left: 150px;
+}
+ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:hover {
+  background-color: crimson;
+  color: #fff;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li {
+  background: #555;
+  display: block;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover {
+  background: #666;
+}
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+p {
+  width: 1000px;
+  padding-left: 150px;
+  text-align: center;
+  color: darkolivegreen;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana, " sans-serif";
+  font-size: 25px;
+}
+h3 {
+  width: 1000px;
+  padding-left: 590px;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana, " sans-serif";
+  font-size: 1.8em;
+  color: crimson;
+}
+#bottom {
+  font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+  color: darkgoldenrod;
+  background-color: darkkhaki;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 1000px;
+  margin-left: 150px;
+}
+</style>
+
+
+
+<script type="text/javascript" src="./Week 03 _ CSS_files/MathML.js.download"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe'); });</script><script type="text/javascript">function lti_launch( vars ) { var query = ''; for(var key in vars) { if(query.length == 0) { query += '?' + key + '=' + encodeURIComponent(vars[key]); } else { query += '&' + key + '=' + encodeURIComponent(vars[key]); } } location.replace( '/d2l/customization/pearsonlti/6606/Launch' + query ); }
+</script>
+</head>
+<body>
+<div class="document">
+  <div id="title">
+    <h1>Week 03 : CSS</h1>
+    <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+  </div>
+  <!--title -->
+  
+  <div class="content">
+    <div id="menuBar">
+      <ul id="menuBarList">
+        <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+        <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+        <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+        <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+        <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+      </ul>
+    </div>
+    <!-- menuBar -->
+    
+    <div id="text">
+      <h1>Select the Stylesheet</h1>
+      <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts, 
+        and even the layout of the page.You can change the layout of this page by selecting different 
+        stylesheets in the menu, or by selecting one of the following links:<br>
+        <a href="file:///C:/Users/jjcorrea/Desktop/Assign03/Week%2003%20_%20CSS.html#" onclick="applyStyle(0)">Stylesheet 1</a>, <a href="file:///C:/Users/jjcorrea/Desktop/Assign03/Week%2003%20_%20CSS.html#" onclick="applyStyle(1)">Stylesheet 2</a>, <a href="file:///C:/Users/jjcorrea/Desktop/Assign03/Week%2003%20_%20CSS.html#" onclick="applyStyle(2)">Stylesheet 3</a>, <a href="file:///C:/Users/jjcorrea/Desktop/Assign03/Week%2003%20_%20CSS.html#" onclick="applyStyle(3)">Stylesheet 4</a>. </p>
+      <h1>Instructions</h1>
+      <p>Please modify this page to include a description of each stylesheet, including anything clever that 
+        you did to achieve a given effect. Please also include the contributors to a given stylesheet.</p>
+    </div>
+    <!-- text -->
+    <div id="sidebar">
+      <h3>Grading</h3>
+      <p>In order to get full credit for this assignment, you will need to demonstrate what you have learned 
+        and how you helped your classmates. This means your contribution needs to be briefly described 
+        on the page.</p>
+    </div>
+    <!--sidebar --> 
+  </div>
+  <!-- content -->
+  <div id="bottom">Submit this assignment by </div>
+</div>
+<!-- document --> 
+
+<script>
+	    <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+	    function disableStyles() 
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+</body>
+</html>

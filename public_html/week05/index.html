@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CS 213 Week 05 Ponder and Prove</title>
+
+    <script type="text/javascript" src="213.05.PonderProblem.js?_&amp;d2lSessionVal=2rX5c3wwFArRsYwTCeIbKcuaj"></script>
+
+    <style type="text/css">
+        form, pre {
+            margin-left: 20px;
+            font-family: Verdana, Geneva, sans-serif;
+            padding: 6px;
+            width: 550px;
+            font-size: 12px;
+            border: 1px solid rgb(0, 90, 136);
+            border-radius: 4px;
+        }
+
+        table {
+            border: 1px solid black;
+            margin-left: 20px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        h2 {
+            border-bottom-style: solid;
+        }
+    </style>
+    <link href="/~imakram">
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.6.9.5092-10" ></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe'); });</script><script type="text/javascript">function lti_launch( vars ) { var query = ''; for(var key in vars) { if(query.length == 0) { query += '?' + key + '=' + encodeURIComponent(vars[key]); } else { query += '&' + key + '=' + encodeURIComponent(vars[key]); } } location.replace( '/d2l/customization/pearsonlti/6606/Launch' + query ); }</script></head>
+
+<body>
+<!-- First problem: Hello world -->
+<ul>
+  <li><a href="/~imakram/index.html">CS 213 Assignments</a></li> 
+</ul>
+<h2>#1: Hello world</h2>
+<p>Write the necessary JavaScript to put "Hello World" in an alert with the click of a button.</p>
+<button type="button" id="button1" onclick="problem1()">Problem 1</button>
+
+<!-- Second problem: Form Letter -->
+<h2>#2: Form Letter</h2>
+<p>Write a function to perform a simple form letter substitution. Consider the following letter:</p>
+<pre id="text2">
+Dear RICH_GUY:
+
+We are glad to have you has a customer in our bank. Due to
+your preferred status, we offer you, RICH_GUY, a special offer.
+The only thing you need to do to collect your prize is respond
+to this e-mail. Once again, RICH_GUY, we appreciate your
+business.
+
+Sincerely,
+
+Bank President
+</pre>
+<p>Please write the necessary JavaScript to substitute RICH_GUY for the customer's actual name. Display the resulting message in an alert.</p>
+
+Name: <input type="text" id="name2" size="30" value="Mr. Willingsburg"/>
+<button
+        type="button"
+        id="button2"
+        onclick="problem2(document.getElementById('name2').value, document.getElementById('text2').innerHTML)">
+    Problem 2
+</button>
+
+
+<!-- Third problem: Temperature Conversion -->
+<h2>#3: Temperature Conversion</h2>
+<p>Write the necessary JavaScript to convert Fahrenheit to Celsius. Display the resulting Celsius temperature in an alert.</p>
+
+Fahrenheit: <input type="text" id="text3" size="10" value="96.5"/>
+<button
+        type="button"
+        id="button3"
+        onclick="problem3(document.getElementById('text3').value)">
+    Problem 3
+</button>
+
+
+<!-- Fourth problem: Postage -->
+<h2>#4: Postage</h2>
+<p>Write the necessary JavaScript to find the cost of postage for a large envelope. The rates are:</p>
+<table>
+    <tbody>
+    <tr>
+        <th>Weight not over<br/>(ounces)</th>
+        <th>Rate<br/>(dollars)</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>$0.98</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>$1.19</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>$1.40</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>$1.61</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>$1.82</td>
+    </tr>
+    </tbody>
+</table>
+<p>If an invalid weight is entered (a value other than 1 ... 5), then display an error message: "Invalid weight"</p>
+
+Weight: <input type="text" id="text4" size="3" value="3"/>
+<button
+        type="button"
+        id="button4"
+        onclick="problem4(document.getElementById('text4').value)">
+    Problem 4
+</button>
+
+
+<!-- Fifth problem: Loops -->
+<h2>#5: Compound Interest</h2>
+<p>Write the necessary JavaScript to compute compound interest using a FOR loop taking into account the APR (Annual Percentage Rate), Term (time in years the loan will be in force), and Amount (the amount of the loan in dollars).</p>
+
+<table>
+    <tbody>
+    <tr>
+        <td>APR:</td>
+        <td><input type="text" id="apr5" value="7.1"/></td>
+        <td>%</td>
+    </tr>
+    <tr>
+        <td>Term:</td>
+        <td><input type="text" id="term5" size="10" value="5"/></td>
+        <td>years</td>
+    </tr>
+    <tr>
+        <td>Amount:</td>
+        <td><input type="text" id="amount5" size="10" value="25000"/></td>
+        <td>dollars</td>
+    </tr>
+    </tbody>
+</table>
+<button
+        type="button"
+        id="button5"
+        onclick="problem5(document.getElementById('apr5').value, document.getElementById('term5').value, document.getElementById('amount5').value)">
+    Problem 5
+</button>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--bsa has one or more child-->
+<!ELEMENT bsa (council+)>
+
+<!--council has one or more element troops-->
+<!ELEMENT council (troop+)>
+
+<!--troop element has two attributes; number and unit name-->
+<!ELEMENT troop (scout+)>
+
+<!-- all elements in scout listed here--> 
+<!ELEMENT scout (firstName, lastName, address, phoneNumber, rank*, meritbadge*)>
+
+<!--strat first row-->
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+
+<!-- list all the child address here -->
+<!ELEMENT address (street, city, state)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!--end address-->
+
+<!--get phone number element-->
+<!ELEMENT phoneNumber (#PCDATA)>
+
+<!--Declare for element rank-->
+<!ELEMENT rank EMPTY>
+
+<!--Declare for element meritbadge-->
+<!ELEMENT meritbadge EMPTY>
+
+<!ATTLIST council name CDATA #REQUIRED>
+<!ATTLIST troop number CDATA #REQUIRED>
+<!ATTLIST troop unitName CDATA #REQUIRED>
+
+<!--The rank element has a required date-earned attribute-->
+<!ATTLIST rank dateEarned CDATA #REQUIRED>
+<!ATTLIST rank content (Eagle|2ndClass|1stClass|Star|Life|Tenderfoot) #IMPLIED>
+<!--The meritbadge element has a required date-earned attribute-->
+<!ATTLIST meritbadge dateEarned CDATA #REQUIRED>
+<!ATTLIST meritbadge content CDATA #IMPLIED>

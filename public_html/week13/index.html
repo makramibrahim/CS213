@@ -1,0 +1,73 @@
+<!-- directives -->
+<% @Page Language="C#" %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>CS 213 | Week 13</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="New Technology">
+        <meta name="keywords" content=", ">
+        <meta name="author" content="Makram Ibrahim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="week13.css" rel="stylesheet">
+
+         <!-- code section -->
+<script runat="server">
+
+   private void convertoupper(object sender, EventArgs e)
+   {
+      string str = mytext.Value;
+      changed_text.InnerHtml = str.ToUpper();
+   }
+
+   protected void Button1_Click(object sender, EventArgs e) {
+
+   if (!String.IsNullOrEmpty(TextBox1.Text)) {
+   
+      // Access the HttpServerUtility methods through
+      // the intrinsic Server object.
+      Label1.Text = "Welcome, " + Server.HtmlEncode(TextBox1.Text) + ". <br/> The url is " + Server.UrlEncode(Request.Url.ToString())
+   }
+}
+</script>
+
+</head>
+<body>
+<header>
+<h1> CS 213 | We Technology Week 13</h1> 
+</header>
+
+<p>ASP.NET Technology</p>
+
+<!-- Layout -->
+      <h3> Conversion to Upper Case </h3>
+      
+         <form runat="server">
+         <input runat="server" id="mytext" type="text" />
+         <input runat="server" id="button1" type="submit" value="Enter" OnServerClick="convertoupper"/>
+         
+         <hr/>
+         <h3> Results: </h3>
+         <span runat="server" id="changed_text" />
+      </form>
+
+       <form id="form1" runat="server">
+         <div>
+            
+            Enter your name:
+            <br/>
+            <asp:TextBox ID="TextBox1" runat="server" type="text"></asp:TextBox>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+            <br />
+            <asp:Label ID="Label1" runat="server"/>
+
+         </div>
+      </form>
+
+
+  <!-- FOOTER -->
+        <footer>
+            2017 &copy; Makram Ibrahim 
+        </footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>CS 213 | week10</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+     <meta name="description" content="Ajax or Ajaj">
+     <meta name="keywords" content=", ">
+     <meta name="author" content="Makram Ibrahim">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="week10.js"></script>
+</head>
+<style>
+    body{
+        background-color: #ACB0A9;
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
+    }
+    .mainPage{
+        width: 600px;
+        margin: auto;
+        padding: 3em;
+    }
+    
+    header{
+        background-color: #010100;
+        padding: 20px;
+        color: #FFFFFF;
+    }
+    
+    
+   a{
+         color: #FFFFFF;
+        text-decoration: none;
+   }
+
+   ul{
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    #footer{
+        background-color: #010100;
+        padding: 20px;
+        color: #FFFFFF;
+        margin-top: 8em;
+        text-align: center;
+    }
+</style>
+<body>
+  <header>
+<h1 style="text-align:center">CS 213 Ajax | Makram Ibrahim</h1>
+<ul>
+  <li><a href="/~imakram/week10/index.html">Home</a></li>
+  <li><a href="/~imakram/index.html">CS 213 Assignment</a></li>
+</ul>
+</header> 
+ <div class="mainPage">
+ <div class="content">
+ 
+ <!--select a value from the drop down list-->
+  <h2>Please select a city from the drop-down list:</h2>
+   <select id="objectInput" onchange="listOfObject()">
+                  <!-- onchange="listOfObject()"-->
+                    <option value="select">Select</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">CANADA</option>
+                    <option value="russia">RUSSIA</option>
+                    <option value="mexico">MEXICO</option>
+</select>
+<button  type="button" onclick="reset()">Reset</button>
+<h3>The largest cities and their respective populations:</h3>
+<div id="objectOutput"></div>
+	  
+ <!--display the student-->	  
+  <h2>Students<br>
+ Please enter the file name(json.txt or json1.txt):</h2>
+                      
+ <!--input file name-->
+                 <input name="fileInput" onBlur="validateFileName(this.value)" id="objectInput2" value="json.txt" size="15">
+                       
+                <button onClick="listOfObject2()">Parse JSON</button>
+                
+                <button onClick="reset2()">Reset JSON</button>
+                <h3>Student Data:</h3>
+     <div id="objectOutput2" style="margin:1em; width:600px"></div>
+                
+<br><br>
+     </div>
+    </div>
+ <footer id="footer">&COPY; 2017 Makram Ibrahim </footer>
+</body>
+</html>

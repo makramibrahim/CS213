@@ -1,0 +1,52 @@
+html{
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    background-color: #45B1CC;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #3A5B63;
+    padding: 1em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer {
+    background-color: #3A5B63;
+    padding: 1em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 5m;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

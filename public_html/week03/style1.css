@@ -1,0 +1,168 @@
+/*************************
+* external CSS file
+**************************/
+/*=========Header & Navigation===========*/
+
+html {
+  background-image:
+        radial-gradient(
+           wheat, white);
+  border: 10px solid wheat;
+  border-radius: 30px;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  display: inline;
+  box-shadow: 0px 3px 12px 0.00px rgba(0, 0, 0, 0.25);
+  
+}
+
+.page-header {
+    color: #3c4a4f;
+    font:18px time;
+    height: auto;
+    padding-top: 0;
+    width: 100%;
+    background-color: wheat;
+    text-align: center;
+    font-family: cursive;
+    border-radius: 25px;
+}
+
+.pieces {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.pieces li {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    display: inline-block;
+    flex: auto;
+    border-radius: 2em;
+    box-shadow: 0px 5px 12px 0.00px rgba(0, 0, 0, 0.35);
+}
+.pieces li a{
+      text-decoration: none; 
+}
+
+.page-nav {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+/*=========images for header and body===========*/
+
+.featured-image {
+  width: 70%;      
+  height: 400px;
+  margin: 0em;    
+ } 
+
+ .featured-image2 {
+  width: 120%;      
+  height: 400px;
+  margin: 0em;    
+ } 
+ 
+ .headerimage {
+  width: 100%;
+  height: 180px;
+ }
+
+ /*========Paragtaphs============*/
+#p1{
+  width: 70%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+#p2{
+  width: 70%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: blue;
+  font-size: 20px;
+}
+#p3{
+  width: 70%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+#p4{
+  width: 70%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: green;
+  font-size: 20px;
+}
+
+#p5{
+  width: 70%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+#p6{
+  width: 70%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: lightblue;
+  font-size: 20px;
+}
+
+.page-footer{
+    background-color: wheat;
+    margin-bottom: 4em;
+    clear:both;
+    text-align:center;
+    font-size: 60%;
+    padding: 1em;
+    border-radius: 25px;
+    margin-bottom: -2em; 
+}
+
+.page-footer li{
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+  line-height: 33px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+   color: #3c4a4f;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.page-footer li a{
+      text-decoration: none; 
+}
+

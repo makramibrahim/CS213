@@ -1,0 +1,170 @@
+#bodyBook {
+    background-color: #C3BCF5;
+
+}
+
+#bodyContact {
+    background-color: #C3BCF5;
+
+}
+
+image{
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+footer{
+    background: black;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-bottom: -3em;
+}
+
+/***********************
+*Slider classes Page 1
+************************/  
+.search {
+    margin-top: -4em;
+    margin-left: 70em;
+}
+
+#h1p1{
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue;
+}
+
+#h1p2{
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue;
+}
+
+#h2p1{
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue;
+}
+
+p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue;
+    
+}
+
+
+/***********************
+*Slider classes Page 2
+************************/
+
+.comtainer{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+.container1 {
+    padding: 2em;
+    margin-left: 5em;
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue; 
+    background-image: url(images/conrad-dubai-36800081-1430834475-ImageGalleryLightbox.jpg);
+    background-repeat: no-repeat;
+    height: 325px;
+    width: 465px;
+    border: solid;
+    text-align: center;
+    
+    
+}
+
+.container2 {
+    padding: .2em;
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue; 
+    margin-left: 44em;
+    margin-top: -23.2em;
+    background-image: url(images/anti-pasti-buffet.jpg);
+    background-repeat: no-repeat;
+    height: 325px;
+    width: 465px;
+    border: solid;
+    text-align: center;
+    
+    
+}
+
+.table1 {
+    margin-left: 25px;
+    margin-top: 0px;
+    
+}
+
+.table3 {
+    margin-left: 25px;
+    margin-bottom: 25em;
+    
+}
+
+
+#h1p2 {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue;
+}
+.payInfo {
+    color: black;
+    margin-right: 0em;
+    margin-left: 0em;
+    padding: 2em;
+    margin-top: 2em;
+    text-align: center;
+    border-radius: 25px;
+    position: inherit;
+}
+
+#cart {
+    padding: 10px; 
+    border-radius: 25px;
+    margin-top: -2em;
+    margin-bottom: 1em;
+    text-align: center;
+    position: inherit;
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue;
+    
+}
+
+#contact{
+    padding: 5em;
+    text-shadow: 2px 2px 2px black, 0 0 25px red, 10px 10px 15px blue;
+    text-align: center;
+    margin-bottom: 20em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

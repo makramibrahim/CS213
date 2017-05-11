@@ -1,0 +1,209 @@
+/*************************
+* external CSS file
+**************************/
+
+html {
+  background: url("night-background.jpg") no-repeat fixed;
+  border-radius: 30px;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  display: inline;
+  box-shadow: 3px 3px 12px  3px rgba(0, 0, 0, 0.25);
+}
+
+section{
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: white;
+  padding: 1em;
+  margin: 16em;
+  margin-top: -8em;
+  margin-bottom: 12em;
+  position: static;
+
+}
+
+/*=========Header & Navigation===========*/
+.page-header {
+    color: #3c4a4f;
+    font: 18px;
+    height: auto;
+    padding-top: 0;
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    border-radius: 25px;
+    position: relative;
+    margin-top: -2em;
+    background-color: #2F4F4F;
+}
+
+.pieces {
+	float: left;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding-right: 8px;
+  padding-top: 5px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.pieces li {
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    flex: auto;
+    border-radius: 2em;
+    box-shadow: 0px 5px 12px 0.00px rgba(0, 0, 0, 0.35);
+    margin-top: -3em;
+    background-color: wheat;
+    padding: 5px 18px;
+}
+.pieces li a{
+      text-decoration: none; 
+}
+
+.page-nav {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+input[type=text]{
+  width: auto;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  background-position: 5px 5px;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.bar{
+  width:auto;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  padding: 3px 20px;
+  float: right;
+  margin-right: 2em;
+  border-radius: 1px; 
+}
+
+/*=========images for header and body===========*/
+
+.featured-image {
+  width: 90%;      
+  height: 400px;
+  margin: 0em;
+  border-radius: 50px;    
+ } 
+
+ .featured-image2 {
+  width: 100%;      
+  height: 400px;
+  margin: 0em;
+  border-radius: 50px;    
+ } 
+ 
+ .headerimage {
+  width: 100%;
+  height: 180px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 12px 0.00px rgba(0, 0, 0, 0.35);
+
+ }
+
+ /*========Paragtaphs============*/
+#p1{
+  width: 90%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+#p2{
+  width: 90%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: blue;
+  font-size: 20px;
+}
+#p3{
+  width: 90%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+#p4{
+  width: 90%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: green;
+  font-size: 20px;
+}
+
+#p5{
+  width: 90%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+#p6{
+  width: 90%;
+  display: inline-block;
+  height: auto;
+  margin: 1em 0;
+  text-align: left;
+  color: red;
+  font-size: 20px;
+}
+
+.page-footer{
+    background-color: wheat;
+    clear:both;
+    text-align:center;
+    font-size: 60%;
+    padding: 2px;
+    border: solid #2F4F4F 2px;
+    border-radius: 25px;
+}
+
+.page-footer li{
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+  line-height: 33px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #3c4a4f;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.page-footer li a{
+      text-decoration: none; 
+}
+
